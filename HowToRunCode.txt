@@ -1,0 +1,39 @@
+How to run the project files:
+
+Software requires: MATLAB version R2018B or later. (function 'training_options' exists only in Deep Learning Toolbox which is available in versions r2018b or newer.)
+
+Open the folder path in MATLAB. 
+Open 'guidemo.m' and run code.
+GUI pops up. Train/Browse image and Classify image.
+
+
+**
+The cnn.mat file is a pre-trained network on the dataset. 
+To train the system again, delete folder 'PreprocessedDatabase' and file 'trainedNet.mat'. 
+Run the 'guidemo.m' file in MATLAB. 
+Click on 'Preprocessing' button. Images will be pre-processed and stored in a newly created 'PreprocessedDatabase' file.
+Click on 'Training' button. A newly trained network is stored in a file created by the name 'trainedNet.mat'.
+**
+
+
+
+
+
+
+
+Important:
+**
+210 images from each class is preprocessed and trained in the CNN Network. So, select any of the image numbered more than 210 for testing.
+
+For testing-
+Click 'Browse' button on the GUI. Select image from the folders named malign,benign or normal.
+Click 'Classify' button on the GUI.
+** 
+
+**
+Folders named 'malign','benign' and 'normal' is the dataset for the project divided in the three classes.
+File 'trainedNet.mat' contains the trained CNN network.
+Files 'testcnn.m' and 'plotfeatures.m' are the codes which are used in callback functions of 'guidemo.m'
+**
+
+For the dataset, mail me at mailrohitbhalerao@gmail.com
